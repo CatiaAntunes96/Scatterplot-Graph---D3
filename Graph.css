@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+}
+
+.graph {
+    display: block;
+    margin: auto;
+   background-color:white;
+}
+
