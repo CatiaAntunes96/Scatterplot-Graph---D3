@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto Slab', serif;
+    margin: 60px;
 }
 
 #title {
@@ -14,7 +15,10 @@ body {
 .graph {
     display: block;
     margin: auto;
-   background-color:white;
+    padding: 20px;
+    box-shadow: 10px 10px 16px -12px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    background-color: #dddddd;
 }
 
 .x-axis, .y-axis {
@@ -24,14 +28,15 @@ body {
 .labels {
     font-size: 16px;
     font-weight: bold;
+    fill: #fc8d62;
 }
 
 .tooltip {	
-        position: absolute;			     
-        padding: 10px;				
-        font: 12px sans-serif;		
-        background: lightsteelblue;	
-        border: 0px;		
-        border-radius: 8px;			
-        pointer-events: none;			
+    position: absolute;			     
+    padding: 10px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
 }

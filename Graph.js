@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         
         
-        let color = d3.scaleOrdinal(d3.schemeCategory10);
+        let color = d3.scaleOrdinal(d3.schemeSet2);
 
         //Define de values for x-axis
         let x = d3.scaleLinear()
@@ -58,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .attr("class", "x-axis-label")
         .attr("x", width)
         .attr("y", -6)
-        .style("text-anchor", "end")
-        .text("Year");
 
         //Define values for y-axis
         let y = d3.scaleTime()
@@ -83,8 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .attr("transform", "rotate(-90)")
             .attr("y", 6)
             .attr("dy", ".71em")
-            .style("text-anchor", "end")
-            .text("Best Time (minutes)")
         
         //Add vertical text
         svgContainer.append('text')
@@ -130,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .enter().append("g")
             .attr("class", "legend")
             .attr("id", "legend")
-            .attr("transform", (d, i) => "translate(0," + (height/2 - i * 20) + ")");
+            .attr("transform", (el, i) => "translate(0," + (height/2 - i * 20) + ")");
         
           legend.append("rect")
             .attr("x", width - 18)
